@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+/* 전체 레이아웃 */
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #121212;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 컨테이너 */
+.container {
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+	padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 헤더 */
+h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #4caf50;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* 업로드 섹션 */
+.upload-section {
+	padding: 30px;
+	border: 2px dashed #4caf50;
+	background-color: #1e1e1e;
+	border-radius: 10px;
+	margin: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.upload-section p {
+	font-size: 1rem;
+	color: #b0b0b0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 버튼 스타일 */
+button {
+	background: linear-gradient(45deg, #4caf50, #2e8b57);
+	color: white;
+	padding: 12px 20px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover {
+	background: linear-gradient(45deg, #2e8b57, #4caf50);
+}
+
+/* 결과 섹션 */
+.result-section {
+	padding: 30px;
+	background-color: #1e1e1e;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.result-section h2 {
+	color: #4caf50;
+}
+
+.result-section p {
+	font-size: 1.2rem;
+	color: #b0b0b0;
+}
+
+/* 파일 업로드 입력 */
+input[type="file"] {
+	padding: 10px;
+	border: 1px solid #4caf50;
+	background-color: #1e1e1e;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
 }
